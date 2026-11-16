@@ -28,6 +28,13 @@ DESCRIPTION INFO_OPTIONS
 		{ BOOL }
 		{ "1" }
 	}
+	"jarate"
+	{
+		"JarateIsCool - SFM class portrait renders"
+		"github.com/Grub-Fortress/grub_fortress_src/pull/1"
+		{ BOOL }
+		{ "1" }
+	}
 	"cheesie"
 	{
 		"cheesie_cake - Playtester"
@@ -80,17 +87,24 @@ DESCRIPTION INFO_OPTIONS
 		"Community Help/Contributions"
 		{ CATEGORY }
 	}	
+	"mapbase"
+	{
+		"Mapbase - The base for the TF:Grub Source code"
+		"github.com/mapbase-source/source-sdk-2013"
+		{ BOOL }
+		{ "1" }
+	}
 	"betam"
 	{
-		"BetaM - Custom Items, Credits menu, misc. fixes"
+		"BetaM - Custom Items, Credits menu"
 		"www.youtube.com/BetaM"
 		{ BOOL }
 		{ "1" }
 	}	
-	"cf"
+	"lux"
 	{
-		"Custom Fortress - The mod Grub Fortress is a fork of"
-		"github.com/ALIEN31ITA/Better-Fortress-2"
+		"LUX Shaders - ShiroDkxtro2"
+		"github.com/LUX-Shaders-Team/LUX-Shaders"
 		{ BOOL }
 		{ "1" }
 	}
@@ -101,9 +115,79 @@ DESCRIPTION INFO_OPTIONS
 		{ BOOL }
 		{ "1" }
 	}
-	"ttrf_old_menu"
+	"bdsbase"
 	{
-		"Toru the Red Fox - Old TF2 Main menu code"
+		"Source SDK 2013 BDS Base - Quick Search, TF Bot Give Item Cvars, Achievement notifications"
+		"github.com/BitlDevelopmentStudios/source-sdk-2013-bds-base"
+		{ BOOL }
+		{ "1" }
+	}
+	"hactica"
+	{
+		"Hactica - Ultimate Weapon Animation Fixes"
+		"gamebanana.com/wips/86367"
+		{ BOOL }
+		{ "1" }
+	}
+	"chickenman"
+	{
+		"Chickenman - Sniper Hand Fix"
+		"gamebanana.com/mods/439875"
+		{ BOOL }
+		{ "1" }
+	}
+	"ficool2"
+	{
+		"Ficool2 - 3rd person chat bubble, chat selection fix"
+		"github.com/ficool2"
+		{ BOOL }
+		{ "1" }
+	}
+	"copperpixel-tf2c"
+	{
+		"Copperpixel - TF2C Custom SkyBox Renderer"
+		"github.com/mapbase-source/source-sdk-2013/pull/534"
+		{ BOOL }
+		{ "1" }
+	}
+	"Horiuchi"
+	{
+		"Horiuchi - Visual timer for vote duration"
+		"github.com/horiuchii"
+		{ BOOL }
+		{ "1" }
+	}
+	"MasterOfRespawn"
+	{
+		"MasterOfRespawn - Add payload race behavior to tf_bots"
+		"github.com/ValveSoftware/source-sdk-2013/pull/1738"
+		{ BOOL }
+		{ "1" }
+	}
+	"LordofCreepers"
+	{
+		"LordofCreepers - Make engineer bots care about teleporters"
+		"github.com/ValveSoftware/source-sdk-2013/pull/915"
+		{ BOOL }
+		{ "1" }
+	}
+	"YourSourceBoiii"
+	{
+		"YourSourceBoiii - Chat filter for voice commands"
+		"github.com/ValveSoftware/source-sdk-2013/pull/1884"
+		{ BOOL }
+		{ "1" }
+	}
+	"tf2gr"
+	{
+		"Team Fortress 2: Gold Rush - ''playgamesound'' support on the menu, and making the startup sound a sound script"
+		"tf2goldrush.com - github.com/goldrush-bkup/TF2-GoldRush"
+		{ BOOL }
+		{ "1" }
+	}
+	"ttrf_old_menu_code"
+	{
+		"Toru the Red Fox - Old TF2 Main menu code ported to the SDK"
 		"github.com/TorutheRedFox/source-sdk-2013"
 		{ BOOL }
 		{ "1" }
@@ -112,13 +196,6 @@ DESCRIPTION INFO_OPTIONS
 	{
 		"Solo Fortress 2, Kepler - Item schema delete attribute support"
 		"moddb.com/mods/solo-fortress-2"
-		{ BOOL }
-		{ "1" }
-	}
-	"hactica"
-	{
-		"Hactica - Ultimate Weapon Animation Fixes"
-		"gamebanana.com/wips/86367"
 		{ BOOL }
 		{ "1" }
 	}

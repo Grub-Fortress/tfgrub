@@ -12,15 +12,13 @@
 	}
 	nodegraph 				0
 	icon					"resource/icon"
-	GameData				"tf.fgd"
+	GameData				"bin/tfgrub.fgd"
 	AdditionalLocalization	"tf"
-	InstancePath			"maps/instances/"
+	InstancePath			"mapsrc/instances/"
 	advcrosshair 			1
 	supportsvr				0
 	ReplayRequired 			1
-
 	DependsOnAppID 			440
-
 	FileSystem
 	{
 		SteamAppId				243750
@@ -33,13 +31,13 @@
 			// folder.
 			//
 			// Note that this folder is scanned only when the game is booted.
+			
 			game+mod+custom_mod    |gameinfo_path|custom/*
-			// Enable this if you want to load your TF custom content.
-			//game+mod	|appid_440|tf/custom/*
 
 			// Now search loose files.  We'll set the directory containing the gameinfo.txt file
 			// as the first "mod" search path (after any user customizations).  This is also the one
 			// that's used when writing to the "mod" path.
+			
 			mod+mod_write		|gameinfo_path|.
 			game+game_write		|gameinfo_path|.
 			vgui+vgui_write		|gameinfo_path|.
@@ -50,7 +48,20 @@
 			// VPK and we can avoid making thousands of file system calls to attempt to open files
 			// in folders where they don't exist.  (Searching a VPK is much faster than making an operating
 			// system call.)
-			game+mod			|gameinfo_path|content/*
+			
+			// Mount TF:Grub Folders
+			game+mod			|gameinfo_path|content/tfgrub_content
+			game+mod			|gameinfo_path|content/tfgrub_content_shaders
+			game+mod			|gameinfo_path|content/tfgrub_content_hammer
+			game+mod			|gameinfo_path|content/tfgrub_content_uvf
+			game+mod			|gameinfo_path|content/tfgrub_content_mapbase
+			// Mount TF:Grub VPKs
+			game+mod			|gameinfo_path|content/tfgrub_content.vpk
+			game+mod			|gameinfo_path|content/tfgrub_content_shaders.vpk
+			game+mod			|gameinfo_path|content/tfgrub_content_hammer.vpk
+			game+mod			|gameinfo_path|content/tfgrub_content_uvf.vpk
+			game+mod			|gameinfo_path|content/tfgrub_content_mapbase.vpk
+			// Mount SDK/TF2 Assets
 			game_lv				|appid_440|tf/tf2_lv.vpk
 			game+mod			|appid_440|tf/tf2_textures.vpk
 			game+mod			|appid_440|tf/tf2_sound_vo_english.vpk

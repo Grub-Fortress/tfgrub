@@ -1,21 +1,11 @@
 //Ty BetaM!
 //econ_item_schema.cpp - line 4421
-#base items_rebalance.txt
-//#base items_experimental.txt
-//#base items_dev.txt
-
 "items_game"
 {
 	"prefabs"
 	{
 		"weapon_nailgun"
 		{
-			"tags"
-			{
-				"can_deal_damage"			"1"
-				"can_deal_posthumous_damage"	"1"
-				"can_deal_long_distance_damage"	"1"
-			}
 			"show_in_armory"			"1"
 			"item_class"				"tf_weapon_nailgun"
 			"item_type_name"			"TFGRUB_Weapon_Nailgun"
@@ -59,61 +49,11 @@ not sure if it should be used as a weapon"
 	}
 	"attributes"
 	{
-		//RESTORED ONES
-		"342"
-		{
-			"name"	"see cash through walls"
-			"attribute_class"	"see_cash_through_walls"
-			"description_string"	"#Attrib_CashXray"
-			"description_format"	"value_is_additive"
-			"hidden"	"0"
-			"effect_type"	"positive"
-		}
-		"480"
-		{
-			"name"	"radius stealth"
-			"attribute_class"	"radius_stealth"
-			"description_string"	"#Attrib_Radius_Stealth"
-			"description_format"	"value_is_percentage"
-			"hidden"	"0"
-			"effect_type"	"negative"
-			"stored_as_integer"	"0"
-		}
-		"483"
-		{
-			"name"	"medigun heals buildings"
-			"attribute_class"	"medic_machinery_beam"
-			"description_string"	"#Attrib_Heal_EngiBuildings"
-			"description_format"	"value_is_additive"
-			"hidden"	"1"
-			"effect_type"	"negative"
-			"stored_as_integer"	"0"
-		}
-		"523"
-		{
-			"name"	"arrow mastery"
-			"attribute_class"	"arrow_mastery"
-			"description_string"	"#Attrib_Arrow_Mastery"
-			"description_format"	"value_is_additive"
-			"hidden"	"1"
-			"effect_type"	"negative"
-			"stored_as_integer"	"0"		
-		}
-		// CUSTOM ONES 
 		"4001"
 		{
 			"name"	"sniperrifle has laser pointer"
 			"attribute_class"	"sniper_has_laserdot"
 			"description_string"	"#Attrib_SniperLaser"
-			"description_format"	"value_is_additive"
-			"hidden"	"1"
-			"effect_type"	"negative"
-			"stored_as_integer"	"0"
-		}
-		"4002"
-		{
-			"name"	"drops reviver machine"
-			"attribute_class"	"drops_reviver_machine"
 			"description_format"	"value_is_additive"
 			"hidden"	"1"
 			"effect_type"	"negative"
@@ -129,52 +69,6 @@ not sure if it should be used as a weapon"
 			"effect_type"	"negative"
 			"stored_as_integer"	"0"
 		}
-		"4004"
-		{
-			"name"	"custom sticky trail"
-			"attribute_class"	"custom_sticky_trail"
-			"description_format"	"value_is_additive"
-			"hidden"	"1"
-			"effect_type"	"positive"
-			"stored_as_integer" "0"
-		}
-		"4005"
-		{
-			"name"	"override hand model index"
-			"attribute_class"	"override_hand_model_index"
-			"description_format"	"value_is_additive"
-			"hidden"	"1"
-			"effect_type"	"positive"
-			"stored_as_integer"	"0"
-		}
-		"4007"
-		{
-			"name"	"engy sentry rockets firerate bonus"
-			"attribute_class"	"mult_engy_sentry_rockets_firerate"
-			"description_format"	"value_is_additive"
-			"hidden"	"1"
-			"effect_type"	"neutral"
-			"stored_as_integer"	"0"
-		}
-		"4013"
-		{
-			"name"	"airblast pushes teammates"
-			"attribute_class"	"airblast_pushes_teammates"
-			"description_string"	"#Attrib_AirblastYourTeam"
-			"description_format"	"value_is_additive"
-			"hidden"	"0"
-			"effect_type"	"positive"
-			"stored_as_integer"	"1"
-		}
-		"4011"
-		{
-			"name"	"has infinite ammo"
-			"attribute_class"	"has_infinite_ammo"
-			"description_format"	"value_is_additive"
-			"hidden"	"1"
-			"effect_type"	"positive"
-			"stored_as_integer"	"1"
-		}
 		"4015"
 		{
 			"name"	"projectile has gravity"
@@ -185,7 +79,7 @@ not sure if it should be used as a weapon"
 			"effect_type"	"neutral"
 			"stored_as_integer"	"1"
 		}
-		// GRUB FORTRESS ATTRIBUTES
+		// TF:GRUB ATTRIBUTES
 		"5000"
 		{
 			"name"	"grenade no stick"
@@ -290,7 +184,7 @@ not sure if it should be used as a weapon"
 			"attribute_class"	"mult_decloak_rate"
 			"description_string"	"#Attrib_DecloakRate"
 			"description_format"	"value_is_additive_percentage"
-			"hidden"	"0"
+			"hidden"	"1"
 			"effect_type"	"positive"
 		}
 		"5011"
@@ -347,6 +241,55 @@ not sure if it should be used as a weapon"
 			"armory_desc"	"on_wearer"
 			"stored_as_integer"	"0"
 		}
+		"5018"
+		{
+			"name"	"mult decloak rate DISPLAY ONLY"
+			"attribute_class"	"mult_decloak_rate_DISPLAY_ONLY"
+			"description_string"	"#Attrib_DecloakRate"
+			"description_format"	"value_is_inverted_percentage"
+			"hidden"	"0"
+			"effect_type"	"positive"
+		}
+		"5019"
+		{
+			"name"	"is experimental item"
+			"attribute_class"	"is_experimental_item_DISPLAY"
+			"description_string"	"#TFGRUB_ExperimentalItem_Display"
+			"description_format"	"value_is_additive"
+			"hidden"	"0"
+			"effect_type"	"community"
+		}
+		"5020"
+		{
+			"name"	"is experimental rebalance display"
+			"attribute_class"	"is_experimental_rebalance_DISPLAY"
+			"description_string"	"#TFGRUB_ExperimentalRebalance_Display"
+			"description_format"	"value_is_additive"
+			"hidden"	"0"
+			"effect_type"	"community"
+		}
+		"5021"
+		{
+			"name"	"jarate duration flat"
+			"attribute_class"	"jarate_duration_flat"
+			"description_string"	"#Attrib_JarateDurationFlat"
+			"description_format"	"value_is_additive"
+			"hidden"	"0"
+			"effect_type"	"positive"
+			"armory_desc"	"on_hit jarate"
+			"stored_as_integer"	"0"
+		}
+		"5022"
+		{
+			"name"	"jarate_on_hit"
+			"attribute_class"	"jarate_on_hit"
+			"description_string"	"#Attrib_JarateDurationFlat"
+			"description_format"	"value_is_additive"
+			"hidden"	"0"
+			"effect_type"	"positive"
+			"armory_desc"	"on_hit jarate"
+			"stored_as_integer"	"0"
+		}
 	}
 	"items"
 	{
@@ -357,17 +300,19 @@ not sure if it should be used as a weapon"
 			"name"						"Nailgun"
 			"prefab"					"weapon_nailgun"
 			"moditem"					"1"
+			"usable_by_bots"			"1"
 		}
 		// RPG 
 		"32002"
 		{
 			"name"						"RPG"
 			"item_quality"				"unique"
-			"item_name"					"RPG"
+			"item_name"					"#TFGRUB_Weapon_RPG"
 			"prefab"					"weapon_rocketlauncher"
 			"model_player"				"models/weapons/c_models/c_rpg/c_rpg.mdl"
 			"show_in_armory"			"1"
 			"moditem"					"1"
+			"usable_by_bots"			"0"
 			"attributes"
 			{
 				"projectile has gravity"
@@ -401,6 +346,7 @@ not sure if it should be used as a weapon"
 			"item_iconname"	"leadpipe"
 			"show_in_armory"	"1"
 			"moditem"			"1"
+			"usable_by_bots"			"1"
 			"item_type_name"	"#TFGRUB_Weapon_Leadpipe"
 			"item_name"	"#TFGRUB_Weapon_Leadpipe"
 			"item_slot"	"melee"
@@ -460,6 +406,7 @@ not sure if it should be used as a weapon"
 			"model_player"				"models/weapons/c_models/c_construction_launcher/c_construction_launcher.mdl"
 			"show_in_armory"			"1"
 			"moditem"					"1"
+			"usable_by_bots"			"1"
 			"attributes"
 			{
 				"grenade no stick"
@@ -551,6 +498,7 @@ not sure if it should be used as a weapon"
 			"item_description"			"(Credits : Haau, Dim)"				
 			"show_in_armory"			"1"	
 			"moditem"					"1"
+			"usable_by_bots"			"1"
 			"item_slot"					"primary"
 			"item_name"					"TFGRUB_Weapon_UnderPressure"	
 			"item_logname"				"under_pressure"
@@ -607,6 +555,7 @@ not sure if it should be used as a weapon"
 			"prefab"					"weapon_minigun"
 			"show_in_armory"			"1"	
 			"moditem"					"1"
+			"usable_by_bots"			"1"
 			"item_description"			"Shoots nail projectiles
 			
 			(Credits : Haau, kibbleknight)"
@@ -676,6 +625,7 @@ not sure if it should be used as a weapon"
 			"item_class"				"tf_weapon_minigun_singleshot"
 			"show_in_armory"			"1"	
 			"moditem"					"1"
+			"usable_by_bots"			"1"
 			"item_description"			"(Credits : Haau, kibbleknight)"
 			"anim_slot"					"primary"
 			"item_name"					"TFGRUB_Weapon_BigOwen"
@@ -744,6 +694,7 @@ not sure if it should be used as a weapon"
 			"item_class"				"tf_wearable"
 			"show_in_armory"			"1"
 			"moditem"					"1"
+			"usable_by_bots"			"1"
 			"item_type_name"			"#TF_Wearable_Backpack"
 			"item_name"					"TFGRUB_Wearable_Metal_Backpack"
 			"item_description"			""
@@ -786,6 +737,7 @@ not sure if it should be used as a weapon"
 			"image_inventory_size_h"	"82"
 			"model_player"				"models/weapons/c_models/c_needlesaw/c_needlesaw.mdl"
 			"moditem"					"1"
+			"usable_by_bots"			"0"
 			"attributes"
 			{
 				"heal teammate on hit"
@@ -816,6 +768,7 @@ not sure if it should be used as a weapon"
 			"prefab"					"weapon_invis"
 			"show_in_armory"			"1"
 			"moditem"					"1"
+			"usable_by_bots"			"1"
 			"item_type_name"			"#TF_Weapon_Watch"
 			"item_name"					"#TFGRUB_Weapon_Quickplay"
 			"item_slot"					"pda2"
@@ -839,7 +792,12 @@ not sure if it should be used as a weapon"
 				"mult decloak rate percentage"
 				{
 					"attribute_class"	"mult_decloak_rate"
-					"value"				"0.5"
+					"value"				"0.75"
+				}
+				"mult decloak rate DISPLAY ONLY"
+				{
+					"attribute_class"	"mult_decloak_rate_DISPLAY_ONLY"
+					"value"				"0.75"
 				}
 				"mod_cloak_no_damage_reduction"
 				{
@@ -854,7 +812,7 @@ not sure if it should be used as a weapon"
 				"NoCloakWhenCloaked"
 				{
 					"attribute_class"	"NoCloakWhenCloaked"
-					"value"	"1"
+					"value"				"1"
 				}
 			}
 			"mouse_pressed_sound"	"ui/item_watch_pickup.wav"
